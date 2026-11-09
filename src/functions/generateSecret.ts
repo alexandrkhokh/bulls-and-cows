@@ -1,9 +1,5 @@
-enum Radix {
-  bin = 2,
-  oct = 8,
-  dec = 10,
-  hex = 16,
-}
+import type { Radix } from "./constants.ts";
+
 const generateSecret = (length: number, base: Radix, random = Math.random) => {
   if (length < 1) {
     throw new RangeError("Длина последовательности указана неверно");
