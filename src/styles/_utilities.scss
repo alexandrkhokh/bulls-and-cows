@@ -1,0 +1,8 @@
+@use "variables" as v;
+
+.flex-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: v.$gap;
+}

@@ -1,0 +1,25 @@
+@use "variables" as v;
+
+.btn {
+  padding: 0.4rem 0.75rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: v.$radius;
+
+  &:hover:not(:disabled) {
+    border-color: var(--accent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
