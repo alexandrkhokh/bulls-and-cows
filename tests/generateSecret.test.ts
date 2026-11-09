@@ -23,7 +23,7 @@ describe("generateSecret", () => {
     assert.match(generateSecret(2, 2), /^[01]{2}$/);
     assert.match(generateSecret(8, 8), /^[0-7]{8}$/);
     assert.match(generateSecret(10, 10), /^[0-9]{10}$/);
-    assert.match(generateSecret(16, 16), /^[0-9A-F]{16}$/);
+    assert.match(generateSecret(16, 16), /^[0-9a-f]{16}$/);
   });
 
   it("returns the same secret for the same random sequence", () => {

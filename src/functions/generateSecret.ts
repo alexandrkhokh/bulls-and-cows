@@ -20,7 +20,7 @@ const generateSecret = (length: number, base: Radix, random = Math.random) => {
   while (result.length < length) {
     const item = Math.trunc(random() * base)
       .toString(base)
-      .toUpperCase();
+      .toLowerCase();
     if (!result.includes(item)) {
       result += item;
     }
